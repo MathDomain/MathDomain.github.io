@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathDomain: Learn Math, the Easy way!</title>
+    <title>MathDomain: Learn Math, the Easy Way!</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./navbar.css">
     <link type="x-icon" rel="icon" href="./img/logo/MathDomain-01.png">
@@ -12,25 +12,15 @@
     <header>
         <nav>
             <div id="Logo" style="display: flex; align-items:center;">
-                <img src="./img/logo/MathDomain-01.svg"
-                    height="50em" 
-                    id="MDLogo" 
-                    alt="MathDomain logo" 
-                    style="transition:0.3s ease;">
+                <img src="./img/logo/MathDomain-01.svg" height="50em" id="MDLogo" alt="MathDomain logo" style="transition:0.3s ease;">
                 <h1 id="logotext">MathDomain</h1>
             </div>
-            <input type="search" 
-            id="navsearch"
-            placeholder="Search MathDomain"
-            style="border-radius:100px; padding:0px 10px; width:25vw;"/>
+            <input type="search" id="navsearch" placeholder="Search MathDomain" style="border-radius:100px; padding:0px 10px; width:25vw;"/>
             <div id="mobile-buttons">
                 <div class="searchIcon" onclick="searchToggle(this)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" class="searchbutton">
-                    <path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/>
-                </svg>
+                    <img src="./img/assets/searchbar.svg" class="searchbutton">
                 </div>
                 <div class="container" onclick="hamburgerToggle(this)"> 
-                    <!-- onclick eventlistener for toggling the state -->
                     <div class="bar" id="bar1"></div>
                     <div class="bar" id="bar2"></div>
                     <div class="bar" id="bar3"></div>
@@ -48,28 +38,20 @@
             <div id="sec1cont">
                 <h1>MathDomain</h1>
                 <p style="font-size: 0.5em;">Learn Math, the Easy Way.</p>
-                <input type="text"
-                    style="height:40px; width:50vw" 
-                    id="searchbar"
-                    placeholder="Search for Math Lessons"
-                    style="font-family:Hind Siliguri;
-                    border-radius:100px;">
+                <input type="text" style="height:3vw; width:50%" id="searchbar" placeholder="Search for Math Lessons" style="font-family:Hind Siliguri; border-radius:100px;">
             </div>
-            <img src="./img/waves/wavesNegative (1).svg" height="120px" width="100%" id="wave1">
-                    placeholder="Search for A Math Lessons"
-                    style="font-family:Hind Siliguri;
-                    border-radius:50%;">
-            </div>
-            <div class="wave-container">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="wave">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </section>        
+        </section>
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" height="120" fill="none">
+            <g data-testid="wavesNegative (1)" style="fill: rgb(0, 0, 0);"><g class="fills" data-testid="svg-path">
+            <path d="M1182.792 27.17C1088.004 48 988.536 89 892.608 105.81c-98.712 17.34-201.672 16.33-300.54-.39-69.408-11.73-136.8-31.07-206.4-41.86C256.336 43.736 122.959 53.796 0 92.65V0h1440v24.2c-81.372-23.12-173.148-15.51-257.208 2.97Z" class="shape-fill" style="fill: rgb(126, 174, 251); fill-opacity: 1;"/></g></g>
+        </svg>      
         <section id="section2">
+            <div id="sec2cont">
+                <h1>Our Mission</h1>
+                <p style="word-wrap:break-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Minima deserunt velit quisquam, ipsum maxime illum unde labore, illo praesentium quas iste <br>recusandae ullam iusto quasi aut non nihil cupiditate perspiciatis!</p>       
+            </div>    
         </section>
     </main>
-    </div>
     <script src="./index.js"></script>
 </body>
 </html>
