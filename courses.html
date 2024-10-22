@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="always.css" rel="stylesheet">
+    <link rel="stylesheet" href="./courses.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="Logo" style="display: flex; align-items:center;">
+                <img src="./img/logo/MathDomain-v3.png" height="50em" id="MDLogo" alt="MathDomain logo" style="transition:0.3s ease;">
+                <h1 id="logotext">MathDomain</h1>
+            </div>
+            <input type="search" id="navsearch" placeholder="Search MathDomain" style="border-radius:100px; padding:0px 10px; width:25vw;"/>
+            <div id="mobile-buttons">
+                <div class="searchIcon" onclick="searchToggle(this)">
+                    <img src="./img/assets/searchbar.svg" class="searchbutton">
+                </div>
+                <div class="container" onclick="hamburgerToggle(this)"> 
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+            <ul id="links">
+                <li><a href="./index.html" class="nav-links">Home</a></li>
+                <li><a href="./courses.html" class="nav-links">Courses</a></li>
+                <li><a href="#Lessons" class="nav-links">Lessons</a></li>
+                <li><a href="#About" class="nav-links">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header style="height:5rem; background:linear-gradient(to left, #00FF70, #0070E1)" id="heading">
+        <strong>MathDomain.</strong> Courses
+    </header>
+    <main>
+        <div>
+            <div class="cards">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

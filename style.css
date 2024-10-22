@@ -6,92 +6,96 @@
     --light-text:#1c1c1c;
 
 }
-@font-face {
-    font-family: Montserrat;
-    src: url(./font/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: Lora;
-    src: url(./font/Lora-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: Hind Siliguri;
-    src: url(./font/HindSiliguri-Regular.ttf);
-}
 * {
     font-family: "Montserrat";
 }
 body {
     margin:0px;
     padding:0px;
+    overflow-x: hidden;
 }
+/* Section 1 Styling */
 #section1 {
+    position: relative;
     font-size: 5vw;
     text-align: left;
     line-height: 1px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: left;
     background: linear-gradient(var(--light-primary) 80%, var(--light-secondary) 100%);
-    color:#fefefe;
-    height:25rem;
-=======
-    height:35rem;
+    color: #fefefe;
+    height: 25rem;
     transition: height 0.3s ease;
-    overflow-x:hidden ;
-    padding:50px;
+    padding: 50px;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
+
 #sec1cont {
     transform: translateY(-50px);
     line-height: 0.1rem;
     text-shadow: 4px 4px 5px #00000033;
 }
+
 #searchbar {
     border-radius: 50px;
-    padding:0px 10px;
+    padding: 0px 10px;
     border: solid 2.9px #000000;
 }
-
-/* Wave transition */
-#wave1{
-    position:absolute;
-    bottom:0;
-    left:0;
-    transform: translateY(7rem);
-    transition:0.3 ease;
-/* Wave transition */
-.wave {
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform:rotate(180deg); 
-    transition:0.3s;
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(127% + 1.3px);
-    height: 2px;
-    bottom:0px;
-}
-
-.wave .shape-fill {
-    fill: #646464;
-}
+/* Section 2 Styling */
 #section2 {
-    height:10rem;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    text-align: center;
+    font-size: 1.5rem;
 }
+#section3{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    padding:100px 0px;
+}
+#card-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    width:100vw;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.cards {
+    border-radius:25px;
+    padding:20px;
+    border:solid 2px blue;
+    margin: 50px;
+}
+.button-01{
+    background-color: var(--light-accent);
+    color:#ffffff;
+    width:auto;
+    margin-right:auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+/* Media Queries */
 @media only screen and (max-width: 792px) {
     #section1 {
-        height:15rem;
+        height: 15rem;
     }
-    #wave1{
-        transform:translateY(-1rem)
+    #section2 {
+        font-size:  1.3rem;
+
     }
-    .wave{
+    #wave1 {
+        bottom: 0; /* Ensure it aligns correctly on smaller screens */
     }
-  }
+}

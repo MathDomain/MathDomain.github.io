@@ -1,13 +1,39 @@
+:root{
+    --light-accent: #861313;
+    --light-background: #fff9e5;
+    --light-primary: #3cbe70;
+    --light-secondary: #7eaefb;
+    --light-text:#1c1c1c;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(./font/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Hind Siliguri;
+    src: url(./font/HindSiliguri-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratS;
+    src: url(./font/MontserratSubrayada-Regular.ttf);
+}
+#logo{
+    height:5px
+}
 ul {
     list-style:none;
 }
 nav {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display:flex;
     align-items: center;
     justify-content:space-between;
     padding:0px 20px;
-    height:54px;
+    height:55px;
     background-color: var(--light-background);
     color:var(--light-text);
     transition: height 0.3s ease;
@@ -20,7 +46,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding:0.8rem 50px;
+    padding:2rem 10px;
     font-family: "Montserrat";
     transition: 0.3s ease;
     color:#000000;
@@ -48,7 +74,7 @@ nav ul li a:hover{
 #navsearch{
     padding:0px 10px;
     border-radius: 50px;
-    height:40px;
+    height:1.8rem;
     border:solid 2px #040e7e;
     transition: 0.3s ease;
 }
@@ -73,8 +99,17 @@ nav ul li a:hover{
 .change #bar3{
     transform: translate(0, -5px) rotate(45deg);
 }
-.toggled {
-    
+footer ul {
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#ffffff;
+}
+footer {
+    background: var(--light-accent);
+    color:#ffffff;
+    padding:10px;
 }
 @media only screen and (max-width: 1026px){
     #navsearch{
