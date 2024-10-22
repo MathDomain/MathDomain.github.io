@@ -6,24 +6,13 @@
     --light-text:#1c1c1c;
 
 }
-@font-face {
-    font-family: Montserrat;
-    src: url(./font/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: Lora;
-    src: url(./font/Lora-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: Hind Siliguri;
-    src: url(./font/HindSiliguri-Regular.ttf);
-}
 * {
     font-family: "Montserrat";
 }
 body {
     margin:0px;
     padding:0px;
+    overflow-x: hidden;
 }
 /* Section 1 Styling */
 #section1 {
@@ -53,23 +42,59 @@ body {
     padding: 0px 10px;
     border: solid 2.9px #000000;
 }
-
 /* Section 2 Styling */
 #section2 {
     height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     position:relative;
     text-align: center;
     font-size: 1.5rem;
+}
+#section3{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    padding:100px 0px;
+}
+#card-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    width:100vw;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.cards {
+    border-radius:25px;
+    padding:20px;
+    border:solid 2px blue;
+    margin: 50px;
+}
+.button-01{
+    background-color: var(--light-accent);
+    color:#ffffff;
+    width:auto;
+    margin-right:auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 25px;
 }
 /* Media Queries */
 @media only screen and (max-width: 792px) {
     #section1 {
         height: 15rem;
     }
+    #section2 {
+        font-size:  1.3rem;
 
+    }
     #wave1 {
         bottom: 0; /* Ensure it aligns correctly on smaller screens */
     }

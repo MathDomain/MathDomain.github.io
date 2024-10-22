@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: "Montserrat";
+}
+#heading{
+    display:flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 1.8rem;
+    color:var(--light-background)
+}
