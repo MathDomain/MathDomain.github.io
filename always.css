@@ -21,9 +21,6 @@
     font-family: MontserratS;
     src: url(./font/MontserratSubrayada-Regular.ttf);
 }
-#logo{
-    height:5px
-}
 ul {
     list-style:none;
 }
@@ -37,8 +34,6 @@ nav {
     background-color: var(--light-background);
     color:var(--light-text);
     transition: height 0.3s ease;
-    box-shadow: 4px 4px 10px #00000033;
-    position:sticky;
 }
 nav ul li{
     display:inline;
@@ -46,7 +41,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding:2rem 10px;
+    padding:1.1rem 10px;
     font-family: "Montserrat";
     transition: 0.3s ease;
     color:#000000;
@@ -110,6 +105,12 @@ footer {
     background: var(--light-accent);
     color:#ffffff;
     padding:10px;
+    font-size:2vw;
+}
+logo{
+    display:flex;
+    align-items: center;
+    padding-left:2rem
 }
 @media only screen and (max-width: 1026px){
     #navsearch{
@@ -135,5 +136,8 @@ footer {
 @media only screen and (min-width: 792px){
     #logotext{
         display: none;
+    }
+    footer{
+        font-size:1rem;
     }
 }
