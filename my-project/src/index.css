@@ -2,9 +2,22 @@
     font-family: 'Montserrat';
     src:url(./assets/font/Montserrat-VariableFont_wght.ttf) format('truetype');
   }
-  html{
-    font-family: 'Montserrat';
-  }
+@font-face{
+  font-family: 'Hind Siliguri';
+  src:url(./assets/font/HindiSiliguri-Regular.ttf) format('truetype');
+}
+@font-face{
+  font-family:'Lora';
+  src:url(./assets/font/Lora-VariableFont-wght.ttf) format('truetype');
+}
+@font-face{
+  font-family:'Montserrat-SubrayadaB';
+  src:url(./assets/font/MontserratSubrayada-Bold.ttf) format('truetype');
+}
+@font-face{
+  font-family:'Montserrat-SubrayadaR';
+  src:url(./assets/font/MontserratSubrayada-Regular.ttf) format('truetype');
+}
 
 
 @tailwind base;

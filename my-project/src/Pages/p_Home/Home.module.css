@@ -1,0 +1,15 @@
+.sec1cont{
+    font-size:5vw;
+}
+
+.container{
+    height:25rem;
+    background:linear-gradient(to top, #00FF70, #0070E1);
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    
+}
+.gradient{
+    background:linear-gradient(to top, #00FF70, #0070E1);
+}
