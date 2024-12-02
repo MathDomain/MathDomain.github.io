@@ -9,7 +9,7 @@ import About from './Pages/p_About/About.jsx'
 
 function App() {
 
-  const [page, setPage] = useState('Home');
+  const [page, setPage] = useState('Login');
 
   const changeHandler = (e, page=null) => {
     const value = page || e.target.innerHTML;
@@ -38,9 +38,9 @@ function App() {
             </nav>
             <main>
                 <Home value={page} changeHandler={changeHandler}/>
-                <Courses value={page}/>
-                <Lessons value={page}/>
-                <About value={page}/>
+                <Courses value={page} changeHandler={changeHandler}/>
+                <Lessons value={page} changeHandler={changeHandler}/>
+                <About value={page} changeHandler={changeHandler}/>
             </main>
         </>
   )
