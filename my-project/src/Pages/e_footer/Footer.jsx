@@ -8,14 +8,12 @@ function Footer(props){
         </div>
         <div className='font-Montserrat text-brandBackground'>
         <ul>
-            <li onClick={() => props.changeHandler(null, "Home")}>Home</li>
-            <li onClick={() => props.changeHandler(null, "About")}>About</li>
-            <li onClick={() => props.changeHandler(null, "Courses")}>Courses</li>
-            <li onClick={() => props.changeHandler(null, "Lesson")}>Lesson</li>
-        </ul>
+            {['Home', 'Courses','Lessons', 'About', 'Log In', 'Sign Up'].map((menu) => ( 
+            <li key={menu}
+            onClick={() => props.changeHandler(null, "Home")}
+            className="cursor-pointer">{menu}</li>
+            ))}</ul>
         <ul>
-            <li>Sign Up</li>
-            <li>Log In</li>
         </ul>
         </div>
     </section>)

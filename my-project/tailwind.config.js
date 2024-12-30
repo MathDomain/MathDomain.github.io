@@ -18,10 +18,15 @@ export default {
         brandBackground: '#fff9e5',
         brandAccent: "#861313",
         brandSecondary: '#7eaefb',
-        brandText: '#1c1c1c'
+        brandText: '#1c1c1c',
+        brand100:"#011906",
+        brand200:"#04711a",
+        brand300:"#08C92F",
+        brand400:"#36F75D",
+        brand500:"#f5fff7",
       },
-      gradients: {
-        brandGradient: 'linear-gradient(to right, #0070E1, #00FF70)',
+      backgroundImage: {
+        brandGradient: 'linear-gradient(to right, #08C92F, #04711A)',
       },
     },
 

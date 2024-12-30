@@ -13,3 +13,6 @@
 .gradient{
     background:linear-gradient(to top, #00FF70, #0070E1);
 }
+.hero{
+    border:1px solid red;
+}
