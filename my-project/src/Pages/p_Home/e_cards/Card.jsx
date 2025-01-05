@@ -1,9 +1,13 @@
 function Card(props){
     return (
-        <div className="border-2 border-brandAccent w-52 flex justify-center flex-col rounded-xl p-6 shadow-2xl shadow-white">
-            <img src={props.image} alt={props.name} className="h-44"/>
-            <h1>{props.name}</h1>
-            <button className="bg-brandAccent m-2 text-brandBackground rounded-full py-1 px-2">Learn Now.</button>
+        <div className="bg-white flex items-center px-4 py-2 m-2 rounded-2xl">
+            <img src={props.image} alt={props.name} className="h-28 md:h-44"/>
+            <section className="mx-2">
+                <h1 className=" md:text-3xl font-bold">{props.name}</h1>
+                <p className="md:text-xl max-w-72 my-1">{props.definition}</p>
+                <button className="bg-brand300 font-bold text-brandBackground 
+                rounded-full py-1 px-3">Learn Now.</button>
+            </section>
         </div>
     );
 }
