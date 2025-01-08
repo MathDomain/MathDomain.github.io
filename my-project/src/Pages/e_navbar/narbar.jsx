@@ -8,7 +8,7 @@ function Navbar(props){
         <nav className="bg-white border-b-2 border-black m-0 flex items-center justify-between px-3 shadow-md">
           <div className="flex items-center cursor-pointer" onClick={() => props.changeHandler(null, "Home")}>
             <img className="h-12 p-1" src={MathDomainLogo} alt="MathDomain Logo" />
-            <h1 className="text-xl font-Montserrat font-bold">MathDomain</h1>
+            <h1 className="text-xl font-Montserrat font-bold md:flex hidden">MathDomain</h1>
           </div>
           <ul className="items-center justify-center hidden lg:flex">
             {['Home', 'Courses', 'Lessons', 'About'].map((menu) => (

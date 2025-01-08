@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FloatingLabelInput = ({ label, id, type = "text", className="" }) => {
+const FloatingLabelInput = ({ label, id, type = "text", className="", className1=""}) => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
@@ -17,7 +17,7 @@ const FloatingLabelInput = ({ label, id, type = "text", className="" }) => {
       <label
         htmlFor={id}
         className={`absolute left-3 bg-white px-1 text-gray-500 pointer-events-none transition-all
-          ${isFocused ? "text-xs -top-2" : "md:text-base text-xs md:top-2 top-3.5"}`}
+          ${isFocused ? "text-xs -top-2" : "md:text-base text-xs md:top-2 top-3.5"} ${className1}`}
       >
         {label}
       </label>
