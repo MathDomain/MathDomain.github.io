@@ -6,8 +6,9 @@ function Login(props) {
   const { setIsLoggedin, changeHandler } = props;
 
   const handleLogin = (e) => {
-    e.preventDefault(); // Prevent form reload
-    setIsLoggedin(true); // Set the login state to true
+    setIsLoggedin(true);
+    console.log(setIsLoggedin);
+    changeHandler(e, "Dashboard");
   };
 
   return (

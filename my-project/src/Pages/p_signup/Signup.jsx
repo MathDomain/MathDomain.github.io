@@ -38,7 +38,7 @@ function Signup(props){
                         <FloatingLabelInput id="cpassword" label="Confirm Password" type="Password" className="" />
                     </section>
                     <button className="bg-brand200 text-white rounded-md 
-                    px-4 py-1 text-center m-1 cursor-pointer">Sign Up</button>
+                    px-4 py-1 text-center m-1 cursor-pointer" onClick={() => props.changeHandler(null, "Log In")}>Sign Up</button>
                     </form>
                     <p className='text-center'>Already have an account? <a href="#" className="text-blue-500" onClick={() => props.changeHandler(null, "Log In")}>Log In</a></p>
                 </div>

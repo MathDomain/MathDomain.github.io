@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Pages/e_navbar/narbar.jsx';
+import Navbar from './Pages/e_navbar/navbar.jsx';
 import './App.css';
 import Home from './Pages/p_Home/Home.jsx';
 import Courses from './Pages/p_Courses/Courses.jsx';
@@ -8,10 +8,11 @@ import About from './Pages/p_About/About.jsx';
 import Login from './Pages/p_login/Login.jsx';
 import Footer from './Pages/e_footer/Footer.jsx';
 import Signup from './Pages/p_signup/Signup.jsx';
+import Dashboard from './Pages/p_dash/dashboard.jsx';
 
 function App() {
-  const [page, setPage] = useState('Home');
   const [isLoggedin, setIsLoggedin] = useState(false); // Use state for login status
+  const [page, setPage] = useState(isLoggedin ? 'Dashboard': 'Home');
 
   const changeHandler = (e, newPage) => {
     const targetPage = newPage || e.target.innerHTML;
@@ -38,6 +39,10 @@ function App() {
         );
       case 'Sign Up':
         return <Signup changeHandler={changeHandler} />;
+      case 'Dashboard':
+        return <Dashboard/>;
+      default:
+        
     }
   };
 
@@ -45,7 +50,7 @@ function App() {
     <>
       <Navbar changeHandler={changeHandler} isloggedin={isLoggedin} />
       <main>
-        {isLoggedin ? 'User is logged in' : renderPage()}
+        {renderPage()}
       </main>
       <Footer changeHandler={changeHandler}></Footer>
     </>

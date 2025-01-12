@@ -1,5 +1,3 @@
-import MathDomainLogo from "../assets/logo/MathDomain-v3.png"
-
 function Navbar(props){
 
     const isloggedin = props.isloggedin;
@@ -7,7 +5,7 @@ function Navbar(props){
     return(
         <nav className="bg-white border-b-2 border-black m-0 flex items-center justify-between px-3 shadow-md">
           <div className="flex items-center cursor-pointer" onClick={() => props.changeHandler(null, "Home")}>
-            <img className="h-12 p-1" src={MathDomainLogo} alt="MathDomain Logo" />
+            <img className="h-12 p-1" src='./assets/logo/MathDomain-v3.png' alt="MathDomain Logo" />
             <h1 className="text-xl font-Montserrat font-bold md:flex hidden">MathDomain</h1>
           </div>
           <ul className="items-center justify-center hidden lg:flex">
@@ -30,8 +28,8 @@ function Navbar(props){
             <li className=' bg-brand200 text-white 
             rounded-md px-4 py-1 text-center m-1 cursor-pointer' onClick={props.changeHandler}>Sign Up</li>
           </ul>
-          <img src="./assets/User.png" className={`w-12 h-13 p-2 ${isloggedin ? 'md:relative':'md:hidden'}`} 
-          onClick={() => props.changeHandler(null, "Log In")}/>
+          <img src="./assets/User.png" className={`w-12 h-13 p-2 ${isloggedin ? 'md:relative':'md:hidden'} cursor-pointer`} 
+          onClick={() => props.changeHandler(null, isloggedin ? "Dashboard" : "Log In")}/>
         </nav>
     );
 }
