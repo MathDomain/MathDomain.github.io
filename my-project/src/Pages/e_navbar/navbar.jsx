@@ -28,7 +28,7 @@ function Navbar(props){
             <li className=' bg-brand200 text-white 
             rounded-md px-4 py-1 text-center m-1 cursor-pointer' onClick={props.changeHandler}>Sign Up</li>
           </ul>
-          <img src="./assets/User.png" className={`w-12 h-13 p-2 ${isloggedin ? 'md:relative':'md:hidden'} cursor-pointer`} 
+          <img src="./assets/icons/Profile.png" className={`w-12 h-13 p-2 ${isloggedin ? 'md:relative':'md:hidden'} cursor-pointer`} 
           onClick={() => props.changeHandler(null, isloggedin ? "Dashboard" : "Log In")}/>
         </nav>
     );

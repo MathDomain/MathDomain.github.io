@@ -11,13 +11,13 @@ import Signup from './Pages/p_signup/Signup.jsx';
 import Dashboard from './Pages/p_dash/dashboard.jsx';
 
 function App() {
-  const [isLoggedin, setIsLoggedin] = useState(false); // Use state for login status
+  const [isLoggedin, setIsLoggedin] = useState(true); // Use state for login status
   const [page, setPage] = useState(isLoggedin ? 'Dashboard': 'Home');
 
-  const changeHandler = (e, newPage) => {
-    const targetPage = newPage || e.target.innerHTML;
-    setPage(targetPage);
-    console.log(targetPage);
+  const changeHandler = (e) => {
+    const value = e.target.innerHTML;
+    setPage(value);
+    console.log(page);
   };
 
   const renderPage = () => {
