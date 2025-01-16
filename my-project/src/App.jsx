@@ -14,8 +14,8 @@ function App() {
   const [isLoggedin, setIsLoggedin] = useState(true); // Use state for login status
   const [page, setPage] = useState(isLoggedin ? 'Dashboard': 'Home');
 
-  const changeHandler = (e) => {
-    const value = e.target.innerHTML;
+  const changeHandler = (e, page="") => {
+    const value = e?.target?.innerHTML || page;
     setPage(value);
     console.log(page);
   };

@@ -1,11 +1,11 @@
 function Streak() {
 
-  let streak = 1; 
+  let streak = 7; 
 
   return (
     <section id="stats" className="flex flex-col w-full items-center border-2 border-blue gap-4 md: p-1 rounded-xl">
         <h1 className="text-2xl font-Montserrat font-bold text-brand200">Streak</h1>
-            <section id="streak" className="flex items-center justify-between w-full md:px-12">
+            <section id="streak" className="flex items-center justify-between w-full md:px-10">
                 {[...Array(streak)].map((_, i) => (
                     <section key={i} className="flex flex-col items-center gap-2">
                         <img src="./assets/icons/Streak.png" className="rounded-full md:h-16 md:w-16"/>

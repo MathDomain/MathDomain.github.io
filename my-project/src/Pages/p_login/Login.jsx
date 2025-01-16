@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './Login.module.css';
 import FloatingLabelInput from '../e_inputs/Inputs.jsx';
 
 function Login(props) {
   const { setIsLoggedin, changeHandler } = props;
 
   const handleLogin = (e) => {
+    e.preventDefault();
     setIsLoggedin(true);
     console.log(setIsLoggedin);
-    changeHandler(e, "Dashboard");
+    changeHandler(null, "Dashboard");
   };
 
   return (
@@ -21,7 +21,7 @@ function Login(props) {
         />
         <h1 className="text-center">MathDomain Log In</h1>
         <div id="loginfield" className="rounded-xl p-2">
-          <form className="flex flex-col items-center">
+          <form className="flex flex-col items-center" onSubmit={handleLogin}>
             <FloatingLabelInput
               id="username"
               label="Username"
@@ -31,13 +31,12 @@ function Login(props) {
             <FloatingLabelInput
               id="password"
               label="Password"
-              type="Password"
+              type="password"
               className=""
             />
             <button
               type="submit"
               className="bg-brand200 text-white rounded-md px-4 py-1 text-center m-1 cursor-pointer"
-              onClick={handleLogin}
             >
               Log In
             </button>
