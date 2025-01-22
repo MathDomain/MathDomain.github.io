@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-function E_Header(props){
+function Header(props){
   return(
     <>
     <div className={`h-full bg-brand100 ${styles.header}`} id="">
@@ -10,4 +10,4 @@ function E_Header(props){
   );  
 }
 
-export default E_Header;
+export default Header;

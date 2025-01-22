@@ -1,4 +1,4 @@
-import E_Header from '../e_header/header.jsx'
+import E_Header from '../../Components/e_header/Header.jsx'
 
 function Lessons(props) {
 

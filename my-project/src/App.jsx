@@ -1,60 +1,45 @@
 import React, { useState } from 'react';
-import Navbar from './Pages/e_navbar/navbar.jsx';
+import { createBrowserRouter, Route, RouterProvider, Outlet, Navigate, createRoutesFromElements } from 'react-router-dom';
+
+import Navbar from './Components/e_navbar/navbar.jsx';
 import './App.css';
 import Home from './Pages/p_Home/Home.jsx';
-import Courses from './Pages/p_Courses/Courses.jsx';
+import Courses from './Pages/p_Courses/p_maincourse/Courses.jsx';
 import Lessons from './Pages/p_Lessons/Lessons.jsx';
 import About from './Pages/p_About/About.jsx';
-import Login from './Pages/p_login/Login.jsx';
-import Footer from './Pages/e_footer/Footer.jsx';
-import Signup from './Pages/p_signup/Signup.jsx';
-import Dashboard from './Pages/p_dash/dashboard.jsx';
+import Login from './Pages/Accounts Center/p_login/Login.jsx';
+import Footer from './Components/e_footer/Footer.jsx';
+import Signup from './Pages/Accounts Center/p_signup/Signup.jsx';
+import Dashboard from './Pages/Accounts Center/p_dash/dashboard.jsx';
+import ErrorPage from './Pages/p_error/404error.jsx';
+import CoursePage from './Pages/p_Courses/p_maincourse/coursepage.jsx';
 
 function App() {
-  const [isLoggedin, setIsLoggedin] = useState(true); // Use state for login status
-  const [page, setPage] = useState(isLoggedin ? 'Dashboard': 'Home');
+  const [isLoggedin, setIsLoggedin] = useState(false);
 
-  const changeHandler = (e, page="") => {
-    const value = e?.target?.innerHTML || page;
-    setPage(value);
-    console.log(page);
-  };
-
-  const renderPage = () => {
-    switch (page) {
-      case 'Home':
-        return <Home />;
-      case 'Courses':
-        return <Courses />;
-      case 'Lessons':
-        return <Lessons />;
-      case 'About':
-        return <About />;
-      case 'Log In':
-        return (
-          <Login
-            changeHandler={changeHandler}
-            setIsLoggedin={setIsLoggedin}
-          />
-        );
-      case 'Sign Up':
-        return <Signup changeHandler={changeHandler} />;
-      case 'Dashboard':
-        return <Dashboard/>;
-      default:
-        
-    }
-  };
-
-  return (
-    <>
-      <Navbar changeHandler={changeHandler} isloggedin={isLoggedin} />
+  const Layout = () => (
+    <div>
+      <Navbar isloggedin={isLoggedin} />
       <main>
-        {renderPage()}
+        <Outlet />
       </main>
-      <Footer changeHandler={changeHandler}></Footer>
-    </>
+      <Footer />
+    </div>
   );
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout/>}>
+        <Route index element={<Home />}/>
+        <Route path="courses" element={<Courses/>}/>
+        <Route path="courses/:course" element={<CoursePage/>}/>
+        <Route path="lessons" element={<Lessons/>}/>
+        <Route path="about" element={<About/>}/>
+      </Route>
+    ),
+  );
+
+  return (<RouterProvider router={router} />);
 }
 
 export default App;

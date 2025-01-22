@@ -3,7 +3,6 @@ import styles from './Home.module.css'
 import wave from './wavesNegative (1).svg'
 import Card from './e_cards/Card.jsx'
 import App from '../../App.jsx'
-import Footer from '../e_footer/Footer.jsx'
 
 const Home = () => {
   const [page, setPage] = useState('');

@@ -1,10 +1,10 @@
-import E_Header from '../e_header/header.jsx'
+import Header from '../../Components/e_header/Header.jsx'
 
 function About(props){
         console.log("Selected Home page")
     return(
         <>
-        <E_Header page="About"/>
+        <Header page="About"/>
         </>
     )
 }
