@@ -24,6 +24,7 @@ export default {
         brand300:"#08C92F",
         brand400:"#36F75D",
         brand500:"#6FFC8B",
+        brandMid:"#245b30",
       },
       backgroundImage: {
         brandGradient: 'linear-gradient(to right, #08C92F, #04711A)',
