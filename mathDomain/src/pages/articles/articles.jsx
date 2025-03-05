@@ -47,7 +47,9 @@ export default function Article() {
         <thead>
           <tr>
             {tableData.headers.map((header, i) => (
-              <th key={i} className="border border-brand200 p-2">{header}</th>
+              <th key={i} className="border border-brand200 p-2">
+                {header}
+              </th>
             ))}
           </tr>
         </thead>
@@ -90,15 +92,27 @@ export default function Article() {
         {lesson.content.map((item) => {
           switch (item.type) {
             case "text":
-              return <ReactMarkdown key={item.id || item.value}>{item.value}</ReactMarkdown>;
+              return (
+                <p className="m-2 md:text-xl">
+                  <ReactMarkdown key={item.id || item.value}>
+                    {item.value}
+                  </ReactMarkdown>
+                </p>
+              );
             case "heading":
-              return <h2 key={item.id || item.value} className="text-2xl">{item.value}</h2>;
+              return (
+                <h2 key={item.id || item.value} className="text-2xl">
+                  {item.value}
+                </h2>
+              );
             case "list":
               return (
-                <ul key={item.id || item.value}>
+                <ul key={item.id || item.value} className="text-2xl">
                   {item.items.map((listItem) => (
                     <li key={listItem.id || listItem.value}>
-                      <ReactMarkdown>{listItem.value}</ReactMarkdown>
+                      <ReactMarkdown>
+                        {listItem.value}
+                        </ReactMarkdown>
                     </li>
                   ))}
                 </ul>
@@ -107,14 +121,38 @@ export default function Article() {
               return renderTable(item);
             case "formula":
               return (
-                <MathJax key={item.id || item.value}>
-                  <p>
+                <MathJax
+                  key={item.id || item.value}
+                  className="border-brand200 border-2 shadow-md p-2 m-2"
+                >
+                  <p className="p-2 text-xl">
                     <strong>Formula:</strong> {"\\(" + item.value + "\\)"}
+                  </p>
+                  <p>
+                    Where:
+                    {Array.isArray(item.equivalent) &&
+                      item.equivalent.map((eqGroup, i) => (
+                        <div key={i}>
+                          {eqGroup.map((eq, j) => (
+                            <span key={j} className="text-xl">
+                                          {eq.type === "variable" && <strong>{"\\("+eq.value + "\\)"}</strong>}
+                                          {eq.type === "value" && `: ${eq.value}`}
+                                          {/* <br /> */}
+                                        </span>
+                        ))
+                      }
+                      </div>
+        ))}
                   </p>
                 </MathJax>
               );
             case "space":
-              return <div key={item.id || "space"} className="h-6 w-full bg-brand200"></div>;
+              return (
+                <div
+                  key={item.id || "space"}
+                  className="h-6 w-full bg-brand200"
+                ></div>
+              );
             default:
               return null;
           }

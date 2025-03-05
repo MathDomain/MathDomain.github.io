@@ -1,244 +1,281 @@
 [
-    {
-      "lessonID": "random-variables",
-      "lessonChap": 1,
-      "lessonNum": 1,
-      "title": "Exploring Random Variables",
-      "content": [
-        {
-          "type": "text",
-          "value": "**Variable** — a characteristic or attribute that can assume different values."
-        },
-        {
-          "type": "text",
-          "value": "→ Use capital letters to denote or represent a variable."
-        },
-        { "type": "space", "value": "" },
-        {
-          "type": "text",
-          "value": "**Random Variable** — a variable that can take on values based on the outcomes of a random experiment."
-        },
-        { "type": "space" },
-        { "type": "heading", "value": "Example 1" },
-        {
-          "type": "text",
-          "value": "Tossing a coin → the number of times the coin turns of a tail is an example of a random variable."
-        },
-        {
-          "type": "text",
-          "value": "Suppose **three coins are tossed**. Let Y be the random variable representing the number of tails that occur."
-        },
-        {
-          "type": "table",
-          "headers": ["Steps", "Solution"],
-          "rows": [
-            [
-              "1. Determine the Sample space. Let **H** represent heads and **T** for Tails \n\n ***Sample Space** — the set of all possible outcomes of an experiment",
-              "S = {TTT, TTH, THT, HTT, HHT, HTH, THH, HHH}"
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Count the number of tails in each outcome in the sample space and assign this number to the outcome"
-              },
-              {
-                "type": "table",
-                "headers": ["Possible Outcome", "Value of the Random Variable Y"],
-                "rows": [
-                  ["TTT", 3],
-                  ["TTH", 2],
-                  ["THT", 2],
-                  ["HTT", 2],
-                  ["HHT", 1],
-                  ["HTH", 1],
-                  ["THH", 1],
-                  ["HHH", 0]
-                ]
-              },
-              {
-                "type": "text",
-                "value": "→ The random variable Y can take on the values 0, 1, 2, or 3."
-              }
-            ]
-          ]
-        },
-        { "type": "space" },
-        { "type": "heading", "value": "Example 2" },
-        {
-          "type": "text",
-          "value": "Suppose 2 dices are rolled. The sum of the two numbers that face up is an example of a random variable. This variable may take an integral values from 2 to 12."
-        },
-        {"type": "space"},
-        {
-          "type": "heading",
-          "value": "Two types of Random Variables"
-        },
-        {
-          "type": "list",
-          "items": [
+  {
+    "lessonID": "random-variables",
+    "lessonChap": 1,
+    "lessonNum": 1,
+    "title": "Exploring Random Variables",
+    "content": [
+      {
+        "type": "text",
+        "value": "**Variable** — a characteristic or attribute that can assume different values."
+      },
+      {
+        "type": "text",
+        "value": "→ Use capital letters to denote or represent a variable."
+      },
+      { "type": "space", "value": "" },
+      {
+        "type": "text",
+        "value": "**Random Variable** — a variable that can take on values based on the outcomes of a random experiment."
+      },
+      { "type": "space" },
+      { "type": "heading", "value": "Example 1" },
+      {
+        "type": "text",
+        "value": "Tossing a coin → the number of times the coin turns of a tail is an example of a random variable."
+      },
+      {
+        "type": "text",
+        "value": "Suppose **three coins are tossed**. Let Y be the random variable representing the number of tails that occur."
+      },
+      {
+        "type": "table",
+        "headers": ["Steps", "Solution"],
+        "rows": [
+          [
+            "1. Determine the Sample space. Let **H** represent heads and **T** for Tails \n\n ***Sample Space** — the set of all possible outcomes of an experiment",
+            "S = {TTT, TTH, THT, HTT, HHT, HTH, THH, HHH}"
+          ],
+          [
             {
               "type": "text",
-              "value": "**Discrete random variable** — a random variable that can take any whole number values, outcomes that are countable."
-            },
-            {
-              "type": "text",
-              "value": "This type of variable is associated with experiments for which these are a **finite** number of possible outcomes."
-            },
-            {
-              "type": "text",
-              "value": "Example:"
-            },
-            {
-              "type": "text",
-              "value": "Number of defective chairs produced in a factory"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "type": "text",
-              "value": "**Continuous random variable** — a random variable that can take on non-integral values as they take on values contained in an interval."
-            },
-            {
-              "type": "text",
-              "value": "This random variable is used for experiments with infinitely many possible outcomes and is commonly used for measurements such as length, height, weight, time, and temperature."
-            },
-            {
-              "type": "text",
-              "value": "→ A continuous random variable if it takes on values on a continuous scale."
-            },
-            {
-              "type": "text",
-              "value": "→ Represents measured data."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "lessonID": "probability-distributions",
-      "lessonChap": 1,
-      "lessonNum": 2,
-      "title": "Probability Distributions",
-      "content": [
-        {
-          "type": "text",
-          "value": "The **variance** and **standard deviation** describes the amount of spread, dispersion, or variability of the items in a distribution"
-        },
-        {
-          "type": "heading",
-          "value": "Steps in computing the variance and standard deviation of a discrete probability distribution"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "type": "text",
-              "value": "Compute the mean of the probability distribution using the formula"
-            },
-            {
-              "type": "formula",
-              "value": "m = Σx • P(x)"
-            },
-            {
-              "type": "text",
-              "value": "Example. Number of Heads"
-            },
-            {
-              "type": "text",
-              "value": "When three coins are tossed, the probability distribution for the random variable **X** representing the number of heads that occur is given below. Compute the variance and standard deviation of the probability distribution."
+              "value": "Count the number of tails in each outcome in the sample space and assign this number to the outcome"
             },
             {
               "type": "table",
-              "headers": ["Number of Head (x)", "Probability (P)"],
+              "headers": ["Possible Outcome", "Value of the Random Variable Y"],
               "rows": [
-                ["0", "1/8"],
-                ["1", "3/8"],
-                ["2", "3/8"],
-                ["3", "1/8"]
+                ["TTT", 3],
+                ["TTH", 2],
+                ["THT", 2],
+                ["HTT", 2],
+                ["HHT", 1],
+                ["HTH", 1],
+                ["THH", 1],
+                ["HHH", 0]
               ]
             },
             {
               "type": "text",
-              "value": "Multiply the square of the value of the random variable **X** by its corresponding probability"
-            },
-            {
-              "type": "text",
-              "value": "Get the sum of the results obtained in Step 2"
-            },
-            {
-              "type": "text",
-              "value": "Subtract the square of the mean from the results obtained in Step 3 to get the variance. So, the formula for variance of the probability distribution is"
-            },
-            {
-              "type": "formula",
-              "value": "σ^2 = Σx^2•P(x)- m^2"
-            },
-            {
-              "type": "text",
-              "value": "The standard deviation is the square root of the variance, thus"
-            },
-            {
-              "type": "formula",
-              "value": "σ=√Σx^2•P(x)-m^2"
+              "value": "→ The random variable Y can take on the values 0, 1, 2, or 3."
             }
           ]
-        }
-      ]
-    },
-    {
-      "lessonID": "normal-distribution",
-      "lessonChap": 2,
-      "lessonNum": 1,
-      "title": "Understanding the Normal Curve Distribution",
-      "content": [
-        {
-          "type": "text",
-          "value": "Normal Curve is also known as Gaussian distribution, is a symmetric probability distribution that is characterized by its bell-shaped curve. This curve represents how values are distributed around a mean."
-        },
-        {
-          "type": "heading",
-          "value": "Key historical figures in statistical analysis"
-        },
-        {
-          "type": "text",
-          "value": "Notable contributors to the concept of the normal distribution include:"
-        },
-        {
-          "type": "text",
-          "value": "Carl Friedrich Gauss whose work laid the foundation for understanding this vital statistical tool in data analysis"
-        },
-        {
-          "type": "heading",
-          "value": "Properties of the Normal Probability Distribution"
-        },
-        {
-          "type": "list",
-          "items": [
-            {
-              "type": "text",
-              "value": "1. The distribution curve is bell-shaped."
-            },
-            {
-              "type": "text",
-              "value": "2. The curve is symmetrical about its center."
-            },
-            {
-              "type": "text",
-              "value": "3. The mean, the median, and the mode coincide at the center."
-            },
-            {
-              "type": "text",
-              "value": "4. The width of the curve is determined by the standard deviation of the distribution."
-            },
-            {
-              "type": "text",
-              "value": "5. The area under the curve is 1. Thus, it represents the probability or proportion or the percentage associated with specific sets of measurement values."
-            }
+        ]
+      },
+      { "type": "space" },
+      { "type": "heading", "value": "Example 2" },
+      {
+        "type": "text",
+        "value": "Suppose 2 dice are rolled. The sum of the two numbers that face up is an example of a random variable. This variable may take an integral values from 2 to 12."
+      },
+      { "type": "space" },
+      {
+        "type": "heading",
+        "value": "Two types of Random Variables"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "type": "text",
+            "value": "**Discrete random variable** — a random variable that can take any whole number values, outcomes that are countable."
+          },
+          {
+            "type": "text",
+            "value": "This type of variable is associated with experiments for which these are a **finite** number of possible outcomes."
+          },
+          {
+            "type": "text",
+            "value": "Example:"
+          },
+          {
+            "type": "text",
+            "value": "Number of defective chairs produced in a factory"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "type": "text",
+            "value": "**Continuous random variable** — a random variable that can take on non-integral values as they take on values contained in an interval."
+          },
+          {
+            "type": "text",
+            "value": "This random variable is used for experiments with infinitely many possible outcomes and is commonly used for measurements such as length, height, weight, time, and temperature."
+          },
+          {
+            "type": "text",
+            "value": "→ A continuous random variable if it takes on values on a continuous scale."
+          },
+          {
+            "type": "text",
+            "value": "→ Represents measured data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonID": "probability-distributions",
+    "lessonChap": 1,
+    "lessonNum": 2,
+    "title": "Computing the Mean of a Discrete Probability Distribution",
+    "content": [
+      {
+        "type": "text",
+        "value": "The **variance** and **standard deviation** describes the amount of spread, dispersion, or variability of the items in a distribution"
+      },
+      {
+        "type": "heading",
+        "value": "Steps in computing the variance and standard deviation of a discrete probability distribution"
+      },
+      {
+        "type": "text",
+        "value": "Compute the mean of the probability distribution using the formula"
+      },
+      {
+        "type": "formula",
+        "value": "μ = Σx • P(x)",
+        "equivalent": [
+          [
+            { "type": "variable", "value": "μ" },
+            { "type": "value", "value": "mean" }
+          ],
+          [
+            {"type":"variable", "value":"x"},
+            {"type":"value","value":"random variable"}
+          ],
+          [
+            {"type":"variable","value":"P(x)"},
+            {"type":"value","value":"probability of x"}
           ]
-        }
-      ]
-    }
-  ]
+        ]
+      },
+      {
+        "type": "text",
+        "value": "Example. Number of Heads"
+      },
+      {
+        "type": "text",
+        "value": "When three coins are tossed, the probability distribution for the random variable **X** representing the number of heads that occur is given below. Compute the variance and standard deviation of the probability distribution."
+      },
+      {
+        "type": "table",
+        "headers": ["Number of Head (x)", "Probability (P)"],
+        "rows": [
+          ["0", "1/8"],
+          ["1", "3/8"],
+          ["2", "3/8"],
+          ["3", "1/8"]
+        ]
+      },
+      {
+        "type": "text",
+        "value": "Multiply the square of the value of the random variable **X** by its corresponding probability"
+      },
+      {
+        "type": "text",
+        "value": "Get the sum of the results obtained in Step 2"
+      },
+      {
+        "type": "text",
+        "value": "Subtract the square of the mean from the results obtained in Step 3 to get the variance. So, the formula for variance of the probability distribution is"
+      },
+      {
+        "type": "formula",
+        "value": "σ^2 = Σx^2•P(x)- μ^2",
+        "equivalent": [
+          [
+            { "type": "variable", "value": "σ" },
+            { "type": "value", "value": "standard deviation" }
+          ],
+          [
+            { "type": "variable", "value": "P(x)" },
+            { "type": "value", "value": "probability of x" }
+          ],
+          [
+            { "type": "variable", "value": "μ" },
+            { "type": "value", "value": "mean" }
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "value": "The standard deviation is the square root of the variance, thus"
+      },
+      {
+        "type": "formula",
+        "value": "σ=\\sqrt{Σx^2•P(x)-μ^2}",
+        "equivalent": [
+          [
+            { "type": "variable", "value": "σ" },
+            { "type": "value", "value": "standard deviation" }
+          ],
+          [
+            { "type": "variable", "value": "P(x)" },
+            { "type": "value", "value": "probability of x" }
+          ],
+          [
+            { "type": "variable", "value": "μ" },
+            { "type": "value", "value": "mean" }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "lessonID": "normal-distribution",
+    "lessonChap": 2,
+    "lessonNum": 1,
+    "title": "Understanding the Normal Curve Distribution",
+    "content": [
+      {
+        "type": "text",
+        "value": "Normal Curve is also known as Gaussian distribution, is a symmetric probability distribution that is characterized by its bell-shaped curve. This curve represents how values are distributed around a mean."
+      },
+      {
+        "type": "heading",
+        "value": "Key historical figures in statistical analysis"
+      },
+      {
+        "type": "text",
+        "value": "Notable contributors to the concept of the normal distribution include:"
+      },
+      {
+        "type": "text",
+        "value": "Carl Friedrich Gauss whose work laid the foundation for understanding this vital statistical tool in data analysis"
+      },
+      {
+        "type": "heading",
+        "value": "Properties of the Normal Probability Distribution"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "type": "text",
+            "value": "1. The distribution curve is bell-shaped."
+          },
+          {
+            "type": "text",
+            "value": "2. The curve is symmetrical about its center."
+          },
+          {
+            "type": "text",
+            "value": "3. The mean, the median, and the mode coincide at the center."
+          },
+          {
+            "type": "text",
+            "value": "4. The width of the curve is determined by the standard deviation of the distribution."
+          },
+          {
+            "type": "text",
+            "value": "5. The area under the curve is 1. Thus, it represents the probability or proportion or the percentage associated with specific sets of measurement values."
+          }
+        ]
+      }
+    ]
+  }
+]
