@@ -277,5 +277,79 @@
         ]
       }
     ]
+  },
+  {
+    "lessonID":"z-curves",
+    "lessonChap": 2,
+    "lessonNum":2,
+    "title":"Understanding the Z - scores",
+    "content":[
+      {"type": "text", "value": "The areas under the normal curve are given in terms of z-values or scores."},
+      {"type":"text", "value":"Either the z-score locates the x within a sample or within a population."},
+      {"type": "heading", "value": "Formula for z-socre for population data"},
+      {"type":"formula", "value": "z = \\frac{x - μ}{σ}"},
+      {"type": "heading", "value": "Formula for z-score for sample data"},
+      {"type": "formula", "value": "z = \\frac{x - x̄}{s}"},
+      {"type": "formula", "equivalent": [
+        [
+          {"type":"variable", "value": "X"},
+          {"type":"value", "value": "given measurement"}
+        ],
+        [
+          {"type":"variable", "value": "μ"},
+          {"type": "value", "value":"population mean"}
+        ],
+        [
+          {"type": "variable", "value":"σ"},
+          {"type":"value", "value": "population standard deviation"}
+        ],
+        [
+          {"type": "variable", "value":"x̄"},
+          {"type":"value", "value": "sample mean"}
+        ],
+        [
+          {"type": "variable", "value":"s"},
+          {"type":"value", "value": "sample standard deviation"}
+        ]
+      ]},
+      {"type":"space", "value":""},
+      {"type": "heading", "value": "Example 1"},
+      {"type": "text", "value": "Given the mean, μ = 50 and the standard deviation, σ = 4 of a population of reading scores."},
+      {"type":"text", "value":"Find the (value) z-value that corresponds to a score X = 58"},
+      {"type": "heading", "value":"Steps in solving the problem:"},
+      {"type": "text", "value":"Step 1: Subtract the mean from the score"},
+      {"type": "formula", "value": "58-50=8"},
+      {"type": "text", "value": "Step 2: Divide the result by the standard deviation"},
+      {"type": "formula", "value":"z=\\frac{8}{4}=2"},
+      {"type": "text", "value": "Step 3: Interpret the result"},
+      {"type": "formula", "value":"z=2"},
+      {"type":"text", "value":"The z-value is 2. This means that a score of 5858 is 2 standard deviations above the mean in this population."},
+      {"type":"space", "value":""},
+      {"type":"heading", "value":"Example 2"},
+      {"type":"text", "value":"Given X = 20, x̄ = 26 and S = 4. Compute the corresponding z-score."},
+      {"type":"heading", "value":"Steps in solving the problem:"},
+      {"type":"text", "value":"Step 1: Subtract the mean from the score"},
+      {"type":"formula", "value":"20-26=-6"},
+      {"type":"text", "value":"Step 2: Divide by the standard deviation"},
+      {"type":"formula", "value":"z=\\frac{-6}{4}=-1.5"},
+      {"type":"text", "value":"Step 3: Interpretation"},
+      {"type":"formula", "value":"z=-1.5"},
+      {"type":"text", "value":"The z-score is -1.5. This means that a score of 2020 is 1.5 standard deviations below the mean in this sample."}
+    ]
+  },
+  {
+    "lessonID":"regions",
+    "lessonChap": 2,
+    "lessonNum": 3,
+    "title":"Identifying regions under the normal curve",
+    "content":[
+      {"type":"heading", "value": "Steps on how to identify a region under the normal curve"},
+      {"type":"list", "items":[
+        {"type":"text", "value":"1. Draw a normal curve"},
+        {"type":"text", "value":"2. Locate the z-score"},
+        {"type":"text", "value":"3. Draw a vertical line from the baseline up to the curve that corresponds to the z-values."},
+        {"type":"text", "value":"4. Shade the required region"}
+      ]}
+    ]
   }
 ]
