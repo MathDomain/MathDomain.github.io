@@ -233,7 +233,10 @@
     "content": [
       {
         "type": "text",
-        "value": "Normal Curve is also known as Gaussian distribution, is a symmetric probability distribution that is characterized by its bell-shaped curve. This curve represents how values are distributed around a mean."
+        "value": "**Normal Curve** is also known as Gaussian distribution, is a symmetric probability distribution that is characterized by its bell-shaped curve. This curve represents how values are distributed around a mean."
+      },
+      {
+        "type":"space", "value":""
       },
       {
         "type": "heading",
@@ -245,7 +248,10 @@
       },
       {
         "type": "text",
-        "value": "Carl Friedrich Gauss whose work laid the foundation for understanding this vital statistical tool in data analysis"
+        "value": "**Carl Friedrich Gauss** whose work laid the foundation for understanding this vital statistical tool in data analysis"
+      },
+      {
+        "type":"space", "value":""
       },
       {
         "type": "heading",
@@ -275,6 +281,11 @@
             "value": "5. The area under the curve is 1. Thus, it represents the probability or proportion or the percentage associated with specific sets of measurement values."
           }
         ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/img/normal-distribution.jpeg",
+        "alt": "Normal Distribution Curve"
       }
     ]
   },
