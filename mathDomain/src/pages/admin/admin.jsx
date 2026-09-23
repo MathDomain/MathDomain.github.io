@@ -22,7 +22,6 @@ export default function Admin() {
         content: JSON.parse(json), // Convert input string to actual JSON
         lessonID: uri // Pass the formatted URI here
       };
-  
       const response = await axios.post(
         "http://localhost/mathDomain-backend/api/insertLesson.php",
         lessonData,
