@@ -18,6 +18,10 @@
         "type": "text",
         "value": "**Random Variable** — a variable that can take on values based on the outcomes of a random experiment."
       },
+      {
+        "type": "formula",
+        "value": "X = {x1, x2, x3, ...}",
+      }
       { "type": "space" },
       { "type": "heading", "value": "Example 1" },
       {
